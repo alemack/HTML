@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- если не указать action действия будут обрабатываться на этой странице -->
+    <form action="" method=""> 
+        <!-- подписи для полей -->
+        <label>Введите имя</label>
+        <input type="text" value="Что-то"> <br><br>
+        <label>Введите имя</label>
+        <input type="text" placeholder="Введите что-то" maxlength="5"> <br><br>
+        <label>Введите имя</label>
+        <input type="text" placeholder="Введите что-то" maxlength="5" disabled>  <br><br>
+        <label>Введите имя</label>
+        <input type="text" placeholder="Введите что-то" maxlength="5" hidden>  <br><br>
+        <label>Введите имя</label>
+        <input type="text" placeholder="Введите что-то" maxlength="5" readonly>  <br><br>
+        Нажми на label <br><br>
+        <label for="user_name" title="Нажми">Введите имя</label>
+        <!-- name для серверной , id можно для css использовать, но js тоже -->
+        <input type="text" placeholder="Введите что-то"  name="user_name" id="user_name">  <br><br>
+
+        <label>пароль</label>
+        <input type="password"> <br><br>
+        <label>email</label>
+        <input type="email"> <br><br>
+        <label>url</label>
+        <input type="url"> <br><br>
+        <!-- не во всех браузер может работать -->
+        <label>color</label>
+        <input type="color"> <br><br>
+        <label>date</label>
+        <input type="date"> <br><br>
+        <label>time</label>
+        <input type="time"> <br><br>
+        <label>datetime</label>
+        <input type="datetime"> <br><br>
+        <label>checkbox</label>
+        <input type="checkbox"> <br><br>
+        <label>radio</label>
+        <input type="radio" name="state">
+        <input type="radio" name="state"> <br><br>
+        <label>file</label>
+        <input type="file"> <br><br>
+
+        <label>button</label>
+        <!-- не происходит перезагрузки страницы button -->
+        <input type="button" value="нажать"> 
+        <input type="submit" value="нажать"> <br><br>
+
+        <label>reset</label>
+        <!-- очистить форму -->
+        <input type="reset" value="очистить форму"> <br><br>
+    </form>
+</body>
+</html>
